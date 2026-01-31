@@ -2,3 +2,17 @@
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import "compass-mixins/lib/compass";
+@import "compass-mixins/lib/compass/layout/sticky-footer";
+
+body {
+    font-family: "Roboto"!important;
+    background: #828282;
+}
+
+@include sticky-footer(65px, ".wrapper", ".footer-tmp", ".footer");
+.noselect {
+	@include user-select(none);
+}
